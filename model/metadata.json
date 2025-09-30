@@ -1,0 +1,28 @@
+{
+  "model": "DecisionTreeRegressor",
+  "numeric_features": [
+    "year",
+    "cylinders",
+    "mileage",
+    "doors",
+    "age",
+    "mileage_k",
+    "desc_len",
+    "has_keywords_warranty"
+  ],
+  "categorical_features": [
+    "make",
+    "model",
+    "engine",
+    "fuel",
+    "transmission",
+    "trim",
+    "body",
+    "exterior_color",
+    "interior_color",
+    "drivetrain",
+    "make_model"
+  ],
+  "saved_at": "2025-09-26T22:23:36.736096",
+  "notes": "Preprocessor includes PowerTransformer + StandardScaler for numeric and OneHot for categorical."
+}

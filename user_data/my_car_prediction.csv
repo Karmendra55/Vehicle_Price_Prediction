@@ -1,0 +1,2 @@
+make,model,year,engine,cylinders,fuel,mileage,transmission,trim,body,doors,exterior_color,interior_color,drivetrain,predicted_price
+Lincoln,2500,2023,24V GDI DOHC Twin Turbo,4,Diesel,18.0,(CVT) CONT VAR.,Series II,Minivan,6,#771c1c,#fdf7f7,All-wheel Drive,58003.333333333336
