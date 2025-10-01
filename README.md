@@ -71,10 +71,10 @@ Make sure all files are placed as shown in the dataset layout, Once started, the
 
 ## Highlights
 
-> Interactive and clean UI using Streamlit.
-> Modular design with separation of logic, UI, and helpers.
-> Option to check Insights of the trained dataset and model.
-> Supports running via .bat for quick local execution.
+- Interactive and clean UI using Streamlit.
+- Modular design with separation of logic, UI, and helpers.
+- Option to check Insights of the trained dataset and model.
+- Supports running via .bat for quick local execution.
 
 ## Key Features
 - Vehicle Price Predictor → Input vehicle specifications to predict price.
