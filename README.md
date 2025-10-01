@@ -1,6 +1,60 @@
 # Vehicle Price Prediction
 
-The Vehicle Price Prediction is a Streamlit-based application that enables users to predict the price based on its specifications, compare multiple configurations, and analyze structured dataset entries. It integrates XGBoost with interactive UI components to provide an intuitive and functional tool for vehicle price estimation and comparison.
+A **Streamlit-based application** for predicting vehicle prices based on specifications, comparing multiple configurations, and exploring structured dataset entries. Powered by **XGBoost**, it delivers a clean, interactive, and functional tool for vehicle price estimation and comparison.
+
+## Dataset Layout
+
+The Dataset and Models are already in place, If you want to change the files you can replace these:
+
+``` markdown
+> dataset/
+>    dataset.csv
+
+> model/
+>    metadata.json
+>    vehicle_price_dt.pkl
+>    vehicle_price_pipeline.pkl
+```
+
+The folder has all the file that we need in the required format, Make sure not to delete any files.
+
+## Quickstart
+
+1) Create and activate a virtual environment
+```bash
+python -m venv .venv
+```
+For Linux or Max:
+```bash
+source .venv/bin/activate
+```
+For Windows:
+```bash
+.venv\Scripts\activate
+```
+
+2) Now Run the file to install the dependencies
+```bash
+install_modules.bat
+```
+
+Run the Application
+3a) Option A
+```bash
+run.bat
+```
+
+3b) Option B
+- Open the command/bash and do the follow:
+```bash
+cd {"Drive:/file/.../Vehicle_Price_Prediction/"}
+```
+and type
+```bash
+streamlit run main.py
+```
+
+Make sure all files are placed as shown in the dataset layout, Once started, the application will open in your default web browser.
 
 ## Objective
 
@@ -9,29 +63,11 @@ The Vehicle Price Prediction is a Streamlit-based application that enables users
 - Format and display raw vehicle specs in a user-friendly format.
 - Maintain batch predictions and downloading of the results.
 
-## Dataset
+## Model
 
-- The Original Dataset can be found in the root folder `dataset/dataset.csv`
-
-## Installation of the Program
-
-> Firstly Run the `install_modules.bat` file
-to download all the dependencies and follow the steps
-
-1. python -m venv
-   - venv source > .venv/bin/activate
-   - #Windows > .venv\Scripts\active
-  
-2. Make sure to check wheather all the files are present or not
-
-3. If the install_modules.bat is not working, use command `prompt/Powershell` and type `pip install -r requirement.txt`
-
-## Running the Program
-
-> Click on the `run.bat` to open the program
-OR
-> Open a terminal and target it towards the root folder `cd {location}`
-> Then type `streamlit run main.py`
+- Algorithm: XGBoost(Before Decision Tree based on `RMSE`) trained on a structured vehicle dataset.
+- Features: Brand, model, fuel type, mileage, engine power, and other specifications.
+- Output: Predicted vehicle price with comparison options.
 
 ## Highlights
 
@@ -41,9 +77,9 @@ OR
 > Supports running via .bat for quick local execution.
 
 ## Key Features
-1. Vehicle Price Predictor: Accepts inputs like brand, model, fuel type, mileage, engine power, and more to predict price using a trained ML model.
-2. Multiple Prediction Options: The User can pick Basic, Advanced and Batch Prediction Modes.
-3. Comparison Tool: Allows side-by-side price comparison between dataset vehicles and user-customized vehicles.
-4. Dataset Browser: Explore structured dataset entries for reference and validation.
-5. Specification Formatter: Converts raw data into a clean, human-readable vehicle specification sheet.
+- Vehicle Price Predictor → Input vehicle specifications to predict price.
+- Multiple Prediction Modes → Basic, Advanced, and Batch prediction options.
+- Comparison Tool → Side-by-side comparison of dataset vehicles and user-customized vehicles.
+- Dataset Browser → Explore dataset entries for validation and analysis.
+- Specification Formatter → Convert raw data into a clean, human-readable specification sheet.
 
